@@ -1,0 +1,28 @@
+/* Keyboard.css */
+.keyboard {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+}
+
+.typewriter-button {
+    background-color: #333;             /* Dark background like vintage typewriter keys */
+    color: #fff;                        /* White text color */
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 50%;                 /* Round shape to mimic typewriter keys */
+    border: 2px solid #444;             /* Slightly lighter border for contrast */
+    box-shadow: 0px 4px 0px #222,       /* Shadow for 3D effect */
+                0px 4px 6px rgba(0, 0, 0, 0.4); /* Additional blur for depth */
+    transition: transform 0.1s ease-in-out;
+    outline: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.typewriter-button:active {
+    transform: translateY(4px);         /* Pressed effect */
+    box-shadow: 0px 1px 0px #222;       /* Reduced shadow on press */
+}
